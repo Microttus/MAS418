@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{6e38cdff-702e-4ffc-a3c6-de966e535390}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+
+VAR
+	bEnable : BOOL := FALSE;
+	bStart : BOOL := FALSE;
+	nINT : INT := -32768;
+	nUNIT : UINT := 65535;
+	fREAL : REAL := 255.255;
+END_VAR
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[bEnable := bStart;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
