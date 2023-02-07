@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="task4" Id="{aceb53d0-0c79-46ab-b12d-4a8988e85ed3}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM task4
+VAR
+	sensor1 : SensorBrands;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[sensor1 := SensorBrands.Parker;
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

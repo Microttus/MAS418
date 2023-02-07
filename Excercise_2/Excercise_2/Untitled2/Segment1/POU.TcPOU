@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="POU" Id="{25bb10e9-007a-4fe5-ae87-87690b6561fa}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM POU
+VAR
+	tVar : TIME := T#5S;
+	nRefVar : REFERENCE TO TIME REF= tVar;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[nRefVar := T#1S;
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

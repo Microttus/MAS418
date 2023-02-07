@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="caseTest" Id="{9574d148-95dc-47f4-bbfb-4520d54ffa30}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM caseTest
+VAR
+	motorStatus : EmotorStatus;
+	shiftVal : INT := 0;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CASE shiftVal OF
+	0: motorStatus := EmotorStatus.stopped;
+	1: motorStatus := EmotorStatus.start;
+	2: motorStatus := EmotorStatus.running;
+END_CASE
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

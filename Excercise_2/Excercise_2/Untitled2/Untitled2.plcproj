@@ -1,0 +1,120 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05c0be1f-2507-4021-8b1f-19b236330e66}</ProjectGuid>
+    <SubObjectsSortedByName>True</SubObjectsSortedByName>
+    <DownloadApplicationInfo>true</DownloadApplicationInfo>
+    <WriteProductVersion>true</WriteProductVersion>
+    <GenerateTpy>false</GenerateTpy>
+    <Name>Untitled2</Name>
+    <ProgramVersion>3.1.4023.0</ProgramVersion>
+    <Application>{93f8e4ba-0a5e-40ce-b199-6068a430dc6a}</Application>
+    <TypeSystem>{19c67241-8884-4940-8eb9-dfda4c775698}</TypeSystem>
+    <Implicit_Task_Info>{535eba4a-9b55-4572-8703-ffc766c3de38}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{ba272605-daf1-4697-904d-9937e1d98ef3}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{7e198593-5d30-49b8-9fed-60e47d975072}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{d0c29ba9-4d65-47b2-9614-336744c2dc5c}</LibraryReferences>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DUTs\SensorBrands.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlcTask.TcTTO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment1\MAIN.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment1\POU.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment1\tASK1.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment1\task3.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment1\task4.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment1\task5.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment2\deg_to_rad.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment2\ST_Timer.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment2\task21.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment2\task22.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment3\caseTest.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment3\EmotorStatus.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment3\SmotorParameter.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment3\task31.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment3\updPar.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Segment3\updPar_1.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DUTs" />
+    <Folder Include="GVLs" />
+    <Folder Include="Segment3" />
+    <Folder Include="Segment2" />
+    <Folder Include="VISUs" />
+    <Folder Include="Segment1" />
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="Tc2_Standard">
+      <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_Standard</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_System">
+      <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_System</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc3_Module">
+      <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc3_Module</Namespace>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Untitled2.tmc">
+      <SubType>Content</SubType>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+  <Data>
+    <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" />
+      <d n="Values" t="Hashtable" />
+    </o>
+  </Data>
+  <TypeList>
+    <Type n="Hashtable">System.Collections.Hashtable</Type>
+    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+    <Type n="String">System.String</Type>
+  </TypeList>
+</XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

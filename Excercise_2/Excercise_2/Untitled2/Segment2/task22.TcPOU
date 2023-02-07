@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="task22" Id="{8419ceb2-289b-43b2-a47d-3b9421153c01}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM task22
+VAR
+	myMotAng : REAL := 180;
+	myMotAngNew : REAL; 
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[deg_to_rad(motor_deg := myMotAng, motor_rad => myMotAngNew);
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

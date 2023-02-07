@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="SensorBrands" Id="{bd54fced-0772-4f7a-914b-23bbb176ed37}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE SensorBrands :
+(
+	Sick,
+	Pliz,
+	Parker,
+	Bosch
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

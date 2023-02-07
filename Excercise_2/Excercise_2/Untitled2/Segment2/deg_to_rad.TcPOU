@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="deg_to_rad" Id="{776082cc-0c1b-4a9b-9c6a-cc1fc7c042c9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION deg_to_rad : REAL
+VAR_INPUT
+	motor_deg : REAL;
+END_VAR
+VAR
+	deg_var : REAL := 180;
+	rad_var : REAL := PI;
+	conv_var : REAL := rad_var/deg_var;
+END_VAR
+VAR_OUTPUT
+	motor_rad : REAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[motor_rad := motor_deg * conv_var;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

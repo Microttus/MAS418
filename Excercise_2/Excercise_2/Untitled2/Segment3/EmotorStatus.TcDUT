@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="EmotorStatus" Id="{84a447f1-dacb-4f0e-a00a-2ea62652beb0}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE EmotorStatus :
+(
+	start := 0,
+	running := 1,
+	stopped := 2
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

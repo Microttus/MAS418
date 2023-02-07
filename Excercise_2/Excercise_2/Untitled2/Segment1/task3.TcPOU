@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="task3" Id="{a379819c-cf8f-4689-acb3-14be80bdec32}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM task3
+VAR
+	dateArray : ARRAY[1..4] OF DATE := [D#2023-02-07, D#2023-02-08, D#2023-02-09, D#2023-02-10];
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[dateArray[3] := D#2023-02-25;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

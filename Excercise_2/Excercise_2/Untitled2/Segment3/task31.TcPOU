@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="task31" Id="{57f56268-2889-4406-bcf8-821aebfdb44a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM task31
+VAR
+	stMotorPar : SmotorParameter;
+	stMotorPar2 : SmotorParameter;
+	fbRTrig : R_TRIG;
+	myBool : BOOL := TRUE;
+	newVal : REAL := 50;
+	motSpeed : REAL;
+	trigSig : BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbRTrig(CLK := myBool, Q => trigSig);
+
+updPar(bUpdateValue := trigSig, fNewVal := newVal, stMotorParameters := stMotorPar);
+updPar_1(bUpdateValue := trigSig, fNewVal := newVal, stMotorParameters := stMotorPar2);
+
+stMotorPar.max_speed;
+stMotorPar2.max_speed;
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

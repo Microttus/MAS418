@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="task21" Id="{ab5dd975-8dc7-4f37-ad54-5afc1194300e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM task21
+VAR
+	stTimer2 : ST_Timer := (myTime := T#5S);
+	fbTimeOff : TOF := (PT := stTimer2.myTime);
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbTimeOff(IN := stTimer2.myBool);
+
+
+]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

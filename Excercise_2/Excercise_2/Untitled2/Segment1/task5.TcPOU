@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="task5" Id="{ccc76bc9-05fc-4160-8aa2-1a4ae11942f4}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM task5
+VAR
+	myTime : TIME := T#10S;
+	fbTimeOn : TON := (PT := myTime);
+	myBool : BOOL := TRUE;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbTimeOn(IN := myBool);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

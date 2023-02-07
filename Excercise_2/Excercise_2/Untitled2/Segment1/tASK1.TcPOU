@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
-  <POU Name="POU" Id="{692759e6-f0e8-427c-9ada-964c908ff5a8}" SpecialFunc="None">
-    <Declaration><![CDATA[PROGRAM POU
+  <POU Name="tASK1" Id="{6d7a7135-be95-4029-bd2d-0a54a90945ef}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM tASK1
 VAR
 	dtVar : DATE_AND_TIME := DT#2023-02-07-13:10:00;
 	pDateTime : POINTER TO DATE_AND_TIME;
@@ -9,8 +9,7 @@ END_VAR
 ]]></Declaration>
     <Implementation>
       <ST><![CDATA[pDateTime := ADR(dtVar);
-pDateTime^ := DT#2023-02-08-15:31:19;
-]]></ST>
+pDateTime^ := DT#2023-02-09-15:31:19;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
