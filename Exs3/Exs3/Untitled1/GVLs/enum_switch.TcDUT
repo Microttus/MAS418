@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="enum_switch" Id="{56567bb0-4660-4ea9-b86b-f3afb94e9aa9}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE enum_switch :
+(
+	off := 0,
+	manual := 1,
+	auto := 2
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

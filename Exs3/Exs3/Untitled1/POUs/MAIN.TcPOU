@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{bf80d31d-77d1-4e56-870a-cac5c21793c4}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bEna : BOOL;
+	bbbhei : BOOL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[bEna := GVL.start_Button;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

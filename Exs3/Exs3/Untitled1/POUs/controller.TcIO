@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Itf Name="controller" Id="{9dc45cb3-75e9-4a60-b7a9-513922777e8c}">
+    <Declaration><![CDATA[INTERFACE controller
+
+METHOD Mode
+VAR_INPUT
+	mode_stat : enum_switch;
+END_VAR
+
+METHOD Status
+VAR_INPUT
+	system_stat : sys_stat;
+END_VAR
+
+METHOD joystick
+VAR_INPUT
+	JOY_TopSwitch : BOOL;
+	JOY_Y : REAL;
+	Joy_X : REAL;
+END_VAR
+]]></Declaration>
+  </Itf>
+</TcPlcObject>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="sys_stat" Id="{c4628e29-5932-4a07-b56d-71e0075803b9}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE sys_stat :
+(
+	notReady := 0,
+	ready := 1,
+	starting := 2,
+	running := 3,
+	stopping := 4,
+	fault := 5
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

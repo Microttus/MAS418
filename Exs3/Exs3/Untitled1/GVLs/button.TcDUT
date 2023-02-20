@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="button" Id="{2f85341a-0687-45e2-8cfd-5d39979488e7}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE button :
+(
+	off := 0,
+	on := 1
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

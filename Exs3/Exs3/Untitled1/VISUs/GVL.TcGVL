@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{b0ccc028-8130-4d40-ace7-24fcdb9805e2}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	startButton : button;
+	stopButton : button;
+	start_Button : BOOL;
+	mode_button : enum_switch := 0;
+	jijiji : BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
