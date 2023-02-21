@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="vir_man_status" Id="{9fa106e3-c2fc-452b-897f-ea84d4469cc4}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+{attribute 'strict'}
+TYPE vir_man_status :
+(
+	virtual_box := 0,
+	real_box := 1
+);
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

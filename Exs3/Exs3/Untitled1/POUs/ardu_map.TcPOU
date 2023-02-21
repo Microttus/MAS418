@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="ardu_map" Id="{3eb280a2-95d7-46bc-9123-6438351d5ea0}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION ardu_map : LREAL
+VAR_INPUT
+	in_val : LREAL;
+	in_min : LREAL;
+	in_max : LREAL;
+	out_min : LREAL;
+	out_max : LREAL;
+END_VAR
+VAR
+END_VAR
+VAR_OUTPUT
+	out_val : LREAL;
+	mid_val : LREAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[mid_val := in_val - in_min;
+out_val := (in_val - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+
+//(x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

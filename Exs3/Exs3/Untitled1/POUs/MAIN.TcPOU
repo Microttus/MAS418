@@ -5,10 +5,25 @@
 VAR
 	bEna : BOOL;
 	bbbhei : BOOL;
+	vir_mach : viritual_control_box;
+	vir_stat : sys_stat;
+	nu_val : LREAL;
+	su_val : LREAL;
+	
+	
+	i_in_min : LREAL := 1000.0;
+	i_in_max : LREAL := 2000.0;
+	i_out_min : LREAL := -1.0;
+	i_out_max : LREAL := 1.0;	
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[bEna := GVL.start_Button;]]></ST>
+      <ST><![CDATA[bEna := visual_box_GVL.auto_button;
+vir_mach.status(current_sys_stat => vir_stat);
+vir_stat;
+ardu_map(in_val := visual_box_GVL.joy_x, in_min :=i_in_min, in_max := i_in_max, out_max := i_out_max, out_min := i_out_min, out_val => nu_val, mid_val => su_val);
+nu_val;
+su_val;]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

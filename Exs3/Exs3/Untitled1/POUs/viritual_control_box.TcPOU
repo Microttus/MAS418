@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="viritual_control_box" Id="{906cb42c-d2ed-4599-9ef1-b92485558ae5}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK viritual_control_box //IMPLEMENTS if_controller
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Method Name="joystick" Id="{14014bdd-18c6-4c0e-89e5-910e597357d8}">
+      <Declaration><![CDATA[METHOD joystick : REAL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="mode" Id="{4a202379-5761-4478-9728-4c281ca12f57}">
+      <Declaration><![CDATA[METHOD mode : enum_switch
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="status" Id="{90598556-d513-4ee8-9db4-63caba628b1e}">
+      <Declaration><![CDATA[METHOD status : sys_stat
+VAR_INPUT
+END_VAR
+VAR_OUTPUT
+	current_sys_stat : sys_stat;
+END_VAR
+VAR
+	have_start_been_high : BOOL := FALSE;
+	have_stop_been_high : BOOL := FALSE;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF GVL.start_Button = TRUE THEN
+	current_sys_stat := sys_stat.ready;
+ELSIF GVL.start_Button = FALSE THEN
+	current_sys_stat := sys_stat.fault;
+ELSE
+	current_sys_stat := sys_stat.notReady;
+END_IF]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

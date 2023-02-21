@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Refactors>
+  <Renames>
+    <RenamedType>
+      <Type guid="3eb280a2-95d7-46bc-9123-6438351d5ea0">POU</Type>
+      <From>POU</From>
+      <To>ardu_map</To>
+    </RenamedType>
+  </Renames>
+</Refactors>

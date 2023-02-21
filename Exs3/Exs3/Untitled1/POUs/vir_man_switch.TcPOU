@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="vir_man_switch" Id="{81d8e52e-82d9-4f5f-9943-4d377369e87a}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK vir_man_switch
+VAR_INPUT
+	vir_real_trig : BOOL;
+END_VAR
+VAR_OUTPUT
+END_VAR
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF vir_real_trig := TRUE THEN
+	GVL.vir_man_indi := vir_man_status.real_box;
+ELSE
+	GVL.vir_man_indi := vir_man_status.virtual_box;
+END_IF]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>

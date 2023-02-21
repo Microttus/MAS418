@@ -32,6 +32,9 @@
     <Compile Include="GVLs\joystick.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GVLs\vir_man_status.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GVLs\Visualization.TcVIS">
       <SubType>Code</SubType>
       <DependentUpon>Visualization Manager.TcVMO</DependentUpon>
@@ -39,19 +42,29 @@
     <Compile Include="PlcTask.TcTTO">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\controller.TcIO">
+    <Compile Include="POUs\if_controller.TcIO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\POU.TcPOU">
+    <Compile Include="POUs\ardu_map.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\viritual_control_box.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\vir_man_switch.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Visualization Manager.TcVMO">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="VISUs\GVL.TcGVL">
+      <SubType>Code</SubType>
+      <LinkAlways>true</LinkAlways>
+    </Compile>
+    <Compile Include="VISUs\visual_box_GVL.TcGVL">
       <SubType>Code</SubType>
       <LinkAlways>true</LinkAlways>
     </Compile>

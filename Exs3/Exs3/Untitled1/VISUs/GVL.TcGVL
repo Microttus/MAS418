@@ -6,8 +6,10 @@ VAR_GLOBAL
 	startButton : button;
 	stopButton : button;
 	start_Button : BOOL;
+	stop_Button : BOOL;
 	mode_button : enum_switch := 0;
-	jijiji : BOOL;
+	rotSwitch : BOOL;
+	vir_man_indi : vir_man_status;
 END_VAR]]></Declaration>
   </GVL>
 </TcPlcObject>
