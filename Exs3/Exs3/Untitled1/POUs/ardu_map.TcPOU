@@ -17,7 +17,7 @@ VAR_OUTPUT
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[mid_val := in_val - in_min;
+      <ST><![CDATA[in_max := mid_val;
 out_val := (in_val - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 
 //(x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;]]></ST>

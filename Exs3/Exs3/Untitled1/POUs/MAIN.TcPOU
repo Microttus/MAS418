@@ -7,13 +7,15 @@ VAR
 	bbbhei : BOOL;
 	vir_mach : viritual_control_box;
 	vir_stat : sys_stat;
-	nu_val : LREAL;
+	nu_val : LREAL := 1.1;
 	su_val : LREAL;
 	
+	my_int : INT;
+	my2_int : INT := 5;
 	
 	i_in_min : LREAL := 1000.0;
 	i_in_max : LREAL := 2000.0;
-	i_out_min : LREAL := -1.0;
+	i_out_min : LREAL := 0;
 	i_out_max : LREAL := 1.0;	
 END_VAR
 ]]></Declaration>
@@ -23,7 +25,9 @@ vir_mach.status(current_sys_stat => vir_stat);
 vir_stat;
 ardu_map(in_val := visual_box_GVL.joy_x, in_min :=i_in_min, in_max := i_in_max, out_max := i_out_max, out_min := i_out_min, out_val => nu_val, mid_val => su_val);
 nu_val;
-su_val;]]></ST>
+su_val;
+my_int := POU(int_in := my2_int);
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

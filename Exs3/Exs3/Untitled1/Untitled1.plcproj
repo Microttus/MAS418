@@ -51,6 +51,9 @@
     <Compile Include="POUs\ardu_map.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\POU.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\viritual_control_box.TcPOU">
       <SubType>Code</SubType>
     </Compile>
