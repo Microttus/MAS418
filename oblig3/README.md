@@ -1,6 +1,6 @@
-# Oblig 3 submission 
+#Oblig 3 submission 
 
-## ROS
+##ROS
 All ros source files are availabel in the src folder. 
 
 ROS steps:
@@ -24,7 +24,7 @@ ros2 run ads_example_package ads_node
 
 Finally, be amazed :) 
 
-## Twincat
+##Twincat
 All files for the twincat part can be found in the folder MAS418_LAB1
 
 Note: The simualtion neds to to activated in twincat
