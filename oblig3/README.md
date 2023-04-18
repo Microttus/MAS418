@@ -1,4 +1,4 @@
-# Oblig 3 submittion
+# Oblig 3 submission 
 
 ## ROS
 All ros source files are availabel in the src folder. 
