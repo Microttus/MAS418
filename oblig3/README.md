@@ -5,12 +5,11 @@ All ros source files are availabel in the src folder.
 
 ROS steps:
 - Build and source local setup
-'''
-colcon build
+```
+col`con build
 . intsall/setup.bash
-'''
+```
 -
-
 
 # Twincat
 
